@@ -61,6 +61,7 @@ make        # Builds and runs the simulation
 
 ## 📈 Waveform Snapshot
 The image below shows the counter incrementing when en=1, holding when en=0, and resetting when reset=1.
+
 ![Counter waveform](Waveforms/waveform.png)
 
 
