@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Counter with Verilator",
+      "type": "shell",
+      "command": "verilator -Wall --cc counter.sv --exe testbench_counter.cpp --trace && make -C obj_dir -f Vcounter.mk",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Counter Simulation",
+      "type": "shell",
+      "command": "./obj_dir/Vcounter",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
